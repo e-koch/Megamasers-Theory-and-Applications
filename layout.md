@@ -1,3 +1,7 @@
 introduction.tex
-results.tex
-results_table.tex
+methods.tex
+mechanisms.tex
+oh_megamasers.tex
+h2o_megamasers.tex
+other_megamasers.tex
+conclusion_future.text
