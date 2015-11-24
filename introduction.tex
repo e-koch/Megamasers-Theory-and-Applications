@@ -1,17 +1,15 @@
 \section{Introduction}
 \label{sec:intro}
 
-Since the discovery of cosmic masers by \citet{gundermann1965} and \citet{WEAVER_1965}, detections of amplified microwave emission have been found in a variety of astronomical environments from numerous chemical species. "Maser" is an acronym for microwave amplification by stimulated emission of radiation, a phenomenon first discovered in laboratory settings by XXX Gordon, Zeiger, Townes 1955 XXX, just a decade before the first astronomical detections.
+Since the discovery of cosmic masers by \citet{gundermann1965} and \citet{WEAVER_1965}, detections of amplified microwave emission have been found in a variety of astronomical environments from numerous chemical species. "Maser" is an acronym for microwave amplification by stimulated emission of radiation, a phenomenon first discovered in laboratory settings by \cite{Gordon_1955}, just a decade before the first astronomical detections. The conditions required for maser emission occur only in environments out of thermal equilibrium XXX CITE XXX. Typical conditions in the interstellar medium (ISM) are inducive of such conditions due to very low gas densities. Due to their non-thermal origins, masers have extremely high brightness temperatures ranging from $T_{\mathrm{b}} = 10^{10}-10^{14}$ K \citep{lo2005}. Such high brightness temperatures obviously do not correspond to the physical temperature of the source, but arise due to the inverse relationship between $T_{\mathrm{b}}$ and the solid angle of the emission region $\Omega_{\mathrm{s}}$;
+\begin{equation}
+\label{eq:temp_bright}
+T_{\mathrm{b}} = \frac{S_\nu}{\Omega_{\mathrm{s}}} \frac{\lambda^2}{2k},
+\end{equation}
+as defined in the Rayleigh-Jeans limit. The observed quantity in the expression is the surface brightness $S_\nu$.
 
+Maser emission has been detected in various astrophysical environments, such as around late-type stars, embedded protostars, HII regions, interactions between jets and the surrounding ISM, and comets \citep{lo2005}. Typically, these emission lines can be classified as Type I masers, driven by stellar winds or jets hitting dense gas, or Type II masers, due to radiative excitement from a nearby star. These represent the source which provides the energy to invert the population levels of the masing species. In maser theory, these energy sources are the "pumping mechanisms", which may be collisionally (Type I) or radiatively (Type II) driven (see \S\ref{sec:maser_theory}).
 
-
-\begin{itemize}
-\item arise in conditions where the population is inverted (out of thermal equilib)
-\item requires excitation source or energy source
-\item found to occur in multiple astrophysical environments (galactic: late-type stars, HII regions, jet interaction, comets; extragalactic: circumnuclear disks)
-\item mega-masers found in H$_2$O, OH, CH$_3$OH, SiO, H$_2$CO
-\item observations of kilo-gigamasers (based on galactic maser luminosities)
-\item 
-\end{itemize}
+In this report, I focus on the discovery, mechanisms, and applications of mega-masers. Until recently, mega-maser emission had only been confidently detected from three species: OH, H$_2$O, and H$_2$CO. The vast majority of the detected mega-maser detection arises from the 22 GHz XXX transition XXX H$_2$O transition XXX and the primary hyperfine ground-state OH lines (1665 \& 1667 MHZ) XXX. Mega-masers were first detected by \citet{DOS_SANTOS_1979}, who found 22 GHz H$_2$O emission towards the nucleus of NGC 4945. They inferred an isotropic luminosity $~10^6$ times greater than any known galactic maser source, leading to the term "mega"-maser. \citet{Baan_1982} reported the first OH mega-maser towards the peculiar galaxy IC 4553. XXX have also detected mega-maser emission from the H$_2$O XXX transition. \citet{baan1986} reported the lone detection of a formaldehyde (H$_2$CO) mega-maser in the 1$_{10}$-1$_{11}$ (6.2 cm) transition. Recent results by, \citet{wang2014} and \citet{chen2015} have extended the mega-masing species to five with their detection of six transitions in methanol (CH$_3$OH; 36.2 GHz, 37.7 GHz, and four clustered at 96.7 GHz), and the silicon monoxide (SiO) J=2-1  ($v=3$) transition. 
 
 This report is arranged as follows. Section \ref{sec:maser_theory} presents the basics of Maser Theory, deriving expressions for the line intensity as a function of path length in the unsaturated and saturated regimes. Section \ref{sec:OH} presents the observational results and applications of OH megamaser emission, while Sections \ref{sec:H2O} and \ref{sec:others} present the same for H$_2$O and other detected megamasers, respectively. Section \ref{sec:conclusion} discusses the use of future surveys using the upcoming generation of radio telescopes.
