@@ -1,13 +1,12 @@
 \section{Maser Theory}
 \label{sec:maser_theory}
 
-All maser emission arises when photons of specific frequencies incite an excited molecule to emit a photon of the same frequency. This causes a cascade of photons to be emitted within a region of excited molecules, resulting in exponential growth of the intensity of a ray of light. In this section, I consider a two-level system of molecular energy levels and derive this exponential growth in ray intensity in terms of the emitting region's physical properties, and the properties of the emitting molecule. It should be noted that a proper treatment of any stimulated emission process requires a minimum of three energy levels, as is shown in derivations by \cite{Elitzur_1992} and \cite{Gray_2009}. Here, I follow the derivation shown in \cite{2004} XXX FIX CITE TO SP TEXT XXX, which implicitly treats additional levels as generic gain and loss rates.
+All maser emission arises when photons of specific frequencies incite an excited molecule to emit a photon of the same frequency. This causes a cascade of photons to be emitted within a region of excited molecules, resulting in exponential growth of the intensity of a ray of light. In this section, I consider a two-level system of molecular energy levels and derive this exponential growth in the ray intensity in terms of the emitting region's physical properties, and the properties of the emitting molecule. It should be noted that a proper treatment of any stimulated emission process requires a minimum of three energy levels, as is shown in derivations by \cite{Elitzur_1992} and \cite{Gray_2009}. Here, I largely follow the derivation presented in \cite{2004} XXX FIX CITE TO SP TEXT XXX, which implicitly treats levels unassociated with the maser transition as generic gain and loss rates.
 
-From the Boltzmann distribution, the excitation temperature is defined by
+Let there be an upper and lower states, such that the maser results from the transition from the upper to the lower. From the Boltzmann distribution, the excitation temperature is defined by
 \begin{equation}
 \label{eq:level_pops}
-\frac{n_\mathrm{u}}{n_\mathrm{l}} = \frac{g_\mathrm{u}}{g_\mathrm{l}} e^{\frac{\DeltaE}{kT_{\mathrm{ex}}}}
+\frac{n_\mathrm{u}}{n_\mathrm{l}} = \frac{g_\mathrm{u}}{g_\mathrm{l}} e^{\frac{\Delta E}{kT_{\mathrm{ex}}}}
 \end{equation}
-
-The population levels are inverted whenever $n_\mathrm{u}}{g_\mathrm{u}} \gt n_\mathrm{l}}{g_\mathrm{l}}$, which corresponds to negative $T_\mathrm{ex}$. Maintaining an inverted requires an energy source, referred to as the "pump" (see XXX ADD SUBSECTION XXX). Transistions in the microwave and radio require the smallest pump action, since $n_\mathrm{u}}{g_\mathrm{u}} \approx n_\mathrm{l}}{g_\mathrm{l}}$ for kinetic temperatures of a few hundred kelvin, even when in thermal equilibrium.
+The population levels are inverted whenever $n_\mathrm{u}/g_\mathrm{u} \gt n_\mathrm{l}/g_\mathrm{l}$, which corresponds to a negative $T_\mathrm{ex}$. Maintaining an inverted requires an energy source, referred to as the "pump" (see XXX ADD SUBSECTION XXX). Transistions in the microwave and radio require the smallest pump action, since $n_\mathrm{u}/g_\mathrm{u} \approx n_\mathrm{l}g_\mathrm{l}$ for kinetic temperatures of a few hundred kelvin, even when in thermal equilibrium. The role of the pump is to excite molecules into the upper and lower states of the maser transition. Let $P_\mathrm{u}$ and $P_\mathrm{l}$ be the rate at which the pump adds molecules to the upper and lower states, respectively.
 
