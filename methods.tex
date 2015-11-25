@@ -6,13 +6,15 @@ All maser emission arises when photons of specific frequencies incite an excited
 Let there be an upper and lower states, such that the maser results from the transition from the upper to the lower. From the Boltzmann distribution, the excitation temperature is defined by
 \begin{equation}
 \label{eq:level_pops}
-\frac{n_\mathrm{u}}{n_\mathrm{l}} = \frac{g_\mathrm{u}}{g_\mathrm{l}} e^{\frac{\Delta E}{kT_{\mathrm{ex}}}}
+\frac{n_u}{n_{l}} = \frac{g_{u}}{g_{l}} \mathrm{exp}\left( \frac{\Delta E}{kT_{\mathrm{ex}}} \right)
 \end{equation}
 $n_u$ and $n_l$ are the number densities in the respective upper and lower states, $g_u$ and $g_l$ are the degeneracies of those states, and $\Delta E$ is the transition energy between them. The population levels become inverted when $n_\mathrm{u}/g_\mathrm{u} \gt n_\mathrm{l}/g_\mathrm{l}$, which corresponds to a negative $T_\mathrm{ex}$. Maintaining an inverted population requires an energy source, referred to as the {\it pump} (see XXX ADD SUBSECTION XXX). Transistions in the microwave and radio require the smallest pump action, since $n_\mathrm{u}/g_\mathrm{u} \approx n_\mathrm{l}g_\mathrm{l}$ for kinetic temperatures of a few hundred kelvin, even when in thermal equilibrium. The role of the pump is to excite molecules into the upper and lower states of the maser transition, and is typically achieved through a collisional or radiative process (see XXX add subsection XXX). Without regard for the details of how the pump achieves this, let $P_\mathrm{u}$ and $P_\mathrm{l}$ be the rate per unit volume at which the pump adds molecules to the upper and lower states from other states of the molecule, respectively. Both states may also decay or be excited further into other energy states. Since this must depend on the population in the upper and lower levels, these loss rates per unit volume are $n_u\Gamma_u$ and $n_l\Gamma_l$, where $\Gamma$ is the decay/excitation rate in each level. The level populations of the upper and lower states also depend on the Einstein A and B coefficients, representing spontaneous decay and absorption between the states, in the presence of a radiation field, $\bar{J}$, the mean intensity. Finally, the molecules may collide with other molecules, giving collisional excitation ($\gamma_{lu}$) and deexcitation ($\gamma_{ul}$) rates. A schematic of the processes discussed here are presented in Figure XXX FIG XXX.
 
 While observed masers may vary on time-scales ranging from days to months \citep[e.g., ][\S XXX]{Elitzur_1992_review}, I make the assumption that the maser mechanism is generally in a steady-state. Using the well-known relations between the Einstein coefficients, the steady state populations of the upper and lower levels are given by,
 \begin{equation}
 \label{eq:ss_pops}
-
+0 = P_u - n_u \Gamma_u - \left( n_u B_{ul} - n_l B_{lu} \right)\bar{J} - \left( n_u \gamma_{ul} - n_l \gamma{lu} \right) n_{\mathrm{tot}} - n_u A_{ul} \\
+0 = P_l - n_l \Gamma_l + \left( n_u B_{ul} - n_l B_{lu} \right)\bar{J} + \left( n_u \gamma_{ul} - n_l \gamma{lu} \right) n_{\mathrm{tot}} + n_u A_{ul}
 \end{equation}
+Here, $n_{\mathrm{tot}}$ is the number density of the background gas.
 
