@@ -34,5 +34,12 @@ $\bar{J}_s$ is the {\it saturation intensity}, representing the intensity where 
 \label{eq:sat_intensity}
 \bar{J}_s \equiv \frac{\Gamma + \left( 1 + g_u/g_l \right)\gamma_{ul}n_{\mathrm{tot}}}{\left( 1 + g_u/g_l \right)B_{ul}}
 \end{equation}
-Equation \ref{eq:pop_inverse} shows that the population inversion is not affected greatly by radiation ($\bar{J}$), until it exceeds $\bar{J}_s$, causing it to quickly
+Equation \ref{eq:pop_inverse} shows that the population inversion is not affected greatly by radiation ($\bar{J}$), until it exceeds $\bar{J}_s$ and quickly declines. This makes the maser mechanism self-limiting, since $\bar{J}$ is amplified by the process. The value of $\bar{J}_s$, as will be shown below, sets the maximum intensity that the maser mechanism can produce, and distinguishes between the unsaturated and saturated regimes \citep{Elitzur_1992}.
 
+For spectral line emission, the emission and absorption coefficients are related to the Einstein $A$ and $B$ values of the transition: $j_\nu = h \nu_0 n_u A_{ul}\phi(\nu)$ and $\alpha_\nu = h\nu_0 \left( n_l B_{lu} - n_u B_{ul} \right)\phi(\nu)/4\pi$, respectively. Here, $\phi(\nu)$ is a normalized Doppler profile, corresponding to the ambient temperature, and $\nu_0$ is the central frequency. The radiative transfer equation then has a form of,
+\begin{equation}
+\label{eq:rad_trans}
+\frac{dI_{\nu}}{ds} = -\alpha_{\nu}I_{\nu} + j_{\nu}
+    = \frac{h \nu_0}{4\pi} \left[ \Delta n g_u B_{ul} I_{\nu} + n_u A_{ul} \right] \phi(\nu)
+\end{equation}
+where I have used the relation of the Einstein $B$ coefficients shown before to convert to $\Delta n$ in $\alpha_{\nu}$.
