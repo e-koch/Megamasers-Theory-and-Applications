@@ -1,5 +1,6 @@
 introduction.tex
 methods.tex
+figures/maser_level_diagram/maser_level_diagram.png
 oh_megamasers.tex
 h2o_megamasers.tex
 other_megamasers.tex
