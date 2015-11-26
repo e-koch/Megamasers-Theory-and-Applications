@@ -18,11 +18,21 @@ While observed masers may vary on time-scales ranging from days to months \citep
 \end{equation}
 Here, $n_{\mathrm{tot}}$ is the number density of the background gas. The $B$-coefficients are related by $g_lB_{lu}=g_uB_{ul}$, and the collisional coefficients approximately follow $\gamma_{ul}g_u \approx \gamma_{lu}g_l$, since $T_{\mathrm{kin}} \gg \Delta E / k_{\mathrm{B}}$ for the relevant energy transitions for masers \citep{stahler_palla_2004}.
 
-The relevant quantity for understanding the radiative transfer of a maser is the {\it degree of inversion} of the population levels. To derive this, \citet{stahler_palla_2004} make two simplifying assumptions: the loss rates are equal ($\Gamma=\Gamma_u=\Gamma_l$), and, in practice, spontaneous emission is negligible compared to the loss rates ($\Gamma \gg A_{ul}$). Assuming equal loss rates does not change the form of the final result of the derivation. Using these assumptions, and the aforementioned relation, the population inversion can be described in terms of the properties of the two states:
+The relevant quantity for understanding the radiative transfer of a maser is the {\it degree of inversion} of the population levels. To derive this, \citet{stahler_palla_2004} make two simplifying assumptions: the loss rates are equal ($\Gamma=\Gamma_u=\Gamma_l$), and, in practice, spontaneous emission is negligible compared to the loss rates for the transitions of interest($\Gamma \gg A_{ul}$) \citep{Elitzur_1992}. Assuming equal loss rates does not change the form of the final result of the derivation. Using these assumptions, and the aforementioned relation, the population inversion can be described in terms of the properties of the two states:
 \begin{equation}
-\label{eq:pop_inverse}
+\label{eq:pop_inverse_full}
 \Delta n \equiv \frac{n_u}{g_u} - \frac{n_l}{g_l} \\
     = \frac{P_u/g_u - P_l/g_l}{\Gamma + \left( 1 + g_u/g_l \right)\gamma_{ul}n_{\mathrm{tot}}
 \end{equation}
-This difference, from the Einstein theory, is the criterion for stimulated action \citep{Gray_2009}.  
+This difference, from the Einstein theory, is the criterion for stimulated action \citep{Gray_2009}. As is done in \citet{stahler_palla_2004}, I define the population inversion due to only collisional processes (ie. $\bar{J}=0$), as $\Delta n^{\circ}$. Equation \ref{eq:pop_inverse_full} can then be expressed as:
+\begin{equation}
+\label{eq:pop_inverse}
+\Delta n = \frac{\Delta n^{\circ}}{1 + \bar{J}/\bar{J}_s}
+\end{equation}
+$\bar{J}_s$ is the {\it saturation intensity}, representing the intensity where the transition will begin to become thermalized due to collisional excitation:
+\begin{equation}
+\label{eq:sat_intensity}
+\bar{J}_s \equiv \frac{\Gamma + \left( 1 + g_u/g_l \right)\gamma_{ul}n_{\mathrm{tot}}}{\left( 1 + g_u/g_l \right)B_{ul}}
+\end{equation}
+Equation \ref{eq:pop_inverse} shows that the population inversion is not affected greatly by radiation ($\bar{J}$), until it exceeds $\bar{J}_s$, causing it to quickly
 
