@@ -1,7 +1,7 @@
 \section{Maser Theory}
 \label{sec:maser_theory}
 
-All maser emission arises when photons of specific frequencies incite an excited molecule to emit a photon of the same frequency. This causes a cascade of photons to be emitted within a region of excited molecules, resulting in exponential growth of the intensity of a ray of light. In this section, I consider a two-level system of molecular energy levels and derive this exponential growth in the ray intensity in terms of the emitting region's physical properties, and the properties of the emitting molecule. It should be noted that a proper treatment of any stimulated emission process requires a minimum of three energy levels, as is shown in the thorough derivations by \cite{Elitzur_1992} and \cite{Gray_2009}. Here, I largely follow the derivation presented in Chapter 4 of \citet{Elitzur_1992} and Chapter 14 of \citet{stahler_palla_2004}, which implicitly treats levels unassociated with the maser transition as generic gain and loss rates.
+All maser emission arises when photons of specific frequencies incite an excited molecule to emit a photon of the same frequency. This causes a cascade of photons to be emitted within a region of excited molecules, resulting in exponential growth of the intensity of a ray of light. In this section, I consider a two-level system of molecular energy levels and derive this exponential growth in the ray intensity in terms of the emitting region's physical properties, and the properties of the emitting molecule. It should be noted that a proper treatment of any stimulated emission process requires a minimum of three energy levels, as is shown in the thorough derivations by \cite{Elitzur_1992} and \cite{Gray_2009}. Here, I largely follow the simplified derivations presented in Chapter 4 of \citet{Elitzur_1992} and Chapter 14 of \citet{stahler_palla_2004}, which implicitly treat levels unassociated with the maser transition as generic gain and loss rates.
 
 Let there be an upper and lower states, such that the maser results from the transition from the upper to the lower. From the Boltzmann distribution, the excitation temperature is defined by
 \begin{equation}
@@ -47,4 +47,16 @@ where I have used the relation of the Einstein $B$ coefficients shown before to 
 \label{eq:rad_trans}
 \frac{dI}{ds} = \frac{h\nu_0}{4\pi \Delta \nu} \left[ \frac{\Delta n^{\circ} g_u B_{ul}}{1 + \bar{J}/\bar{J}_s} I + n_u A_{ul} \right]
 \end{equation}
-where $I \equiv \int I_{\nu}\phi(\nu)d\nu$, and $\Delta \nu \equiv \int I_{\nu}d\nu/I$ is the effective bandwidth. To solve this equation, the forms of $\bar{J}$ and $n_u$ must be specified. Masers are tightly beamed (see \S XXX REF SUBSECTION XXX), so $\bar{J} \approx I\Delta\Omega/4\pi$, assuming $I$ is constant across $\Delta\Omega$.  
+where $I \equiv \int I_{\nu}\phi(\nu)d\nu$, and $\Delta \nu \equiv \int I_{\nu}d\nu/I$ is the effective bandwidth. To solve this equation, the forms of $\bar{J}$ and $n_u$ must be specified. Masers are tightly beamed (see \S XXX REF SUBSECTION XXX), so $\bar{J} \approx I\Delta\Omega/4\pi$, assuming $I$ is constant across $\Delta\Omega$. Then, $\bar{J}$ may be eliminated from Equation \ref{eq:rad_trans}, since $\bar{J}/\bar{J}_s = I/I_s$. The second term in Equation \ref{eq:rad_trans}, containing $n_u$, arises due to spontaneous emission ($A_{ul}$). This contribution will be significantly smaller than the stimulated emission, however it plays the vital role for the maser process in the absence of background radiation. Because of this, I follow \citet{stahler_palla_2004} in approximating $n_u \approx n_u^{\circ}$ to be the population level in the upper state in the absence of radiation. These assumptions simplify Equation \ref{eq:rad_trans} into
+\begin{equation}
+\label{eq:final_rad_trans}
+\frac{dI}{ds} = \frac{I}{L (1+I/I_s)} + \beta \frac{I_s}{L}
+\end{equation}
+where $L \equiv 4 \pi \Delta \nu / h \nu_0 \Delta n^{\circ} g_u B_{ul}$ is the {\it unsaturated growth length}, and
+\begin{equation}
+\label{eq:beta}
+\beta \equiv \frac{n_u^{\circ}}{g_u\Delta n^{\circ}} \left( \frac{\Delta\Omega}{4\pi} \right) \frac{A_{ul}}{B_{ul}\bar{J}_s}
+\end{equation}
+is a small dimensionless quantity \citep{stahler_palla_2004}. The second and third terms in Equation \ref{eq:beta} can be shown to be small using previous arguments and Equation \ref{eq:sat_intensity}, while the first term is limited by the population inversion and should always be near unity.
+
+Solving Equation \ref{eq:final_rad_trans}
