@@ -59,4 +59,29 @@ where $L \equiv 4 \pi \Delta \nu / h \nu_0 \Delta n^{\circ} g_u B_{ul}$ is the {
 \end{equation}
 is a small dimensionless quantity \citep{stahler_palla_2004}. The second and third terms in Equation \ref{eq:beta} can be shown to be small using previous arguments and Equation \ref{eq:sat_intensity}, while the first term is limited by the population inversion and should always be near unity.
 
-Solving Equation \ref{eq:final_rad_trans}
+Solving Equation \ref{eq:final_rad_trans} in the limit of small $\beta$ yields,
+\begin{equation}
+\label{eq:full_solution}
+i(s) - i_0 + \mathrm{ln}\left( i(s) + \beta}{i_0 + \beta} \right) = \frac{s}{L}
+\end{equation}
+where I have defined $i(s) = I(s)/I_s$ and $i_0 = I(0)/I_s$; the background radiation is represented by $I(0)$. \citet{Gray_2009} shows that explicitly solving for $i(s)$ requires use of Lambert's W-function. However, the relevant physical solutions may be attained by considering Equation \ref{eq:full_solution} in its limits.
+
+When $i(s)\ll 1$, the maser is said to be in an {\it unsaturated} state. Taking this limit of Equation \ref{eq:full_solution} give
+\begin{equation}
+\label{eq:unsat_solution}
+i(s) = i_0 \exp{s/L} + \beta\left[ \exp{s/L} - 1 \right]
+\end{equation}
+This shows the expected exponential growth of the intensity as the path length $s$ increases, the complete opposite of the exponential decay normally expected in radiative processes. Note that the inverse of the unsaturated growth length is analogous to the optical depth. As previously discussed, masers are self-limiting and will not remain in the unsaturated regime indefinitely. Once the population inversion becomes diminished, as shown in Equation \ref{eq:pop_inverse}, the maser will no longer experience exponential growth. When the initial flux is from a background source, the maser {\it gain} is $\ln \left( i(s)/i_0 \right)$ and will increase linearly with $s$ \citet{stahler_palla_2004}. Due to the exponential response of an unsaturated masers, they can display drastic time variability \citep{Elitzur_1992}. 
+
+In the opposing limit of $i(s) \gg 1$, the maser is in the {\it saturated} state. The population inversion has been nearly depleted, and the linear terms in Equation \ref{eq:_full_solution} dominate,
+\begin{equation}
+\label{eq:sat_solution}
+i(s) = \frac{s-s_{T}}{L}
+\end{equation}
+The transition to a saturated maser occurs at $s_T$, where $i(s)=1$. At that point, $i_0$ is negligible. Although the intensity growth of a saturated maser is linear, this regime represents the maximum efficiency that the pumping process can produce \citep{Elitzur_1992}.
+
+\subsection{Line Narrowing}
+\label{sub:line_narrow}
+
+\subsection{Beaming}
+\label{sub:beaming}
