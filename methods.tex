@@ -1,7 +1,7 @@
 \section{Maser Theory}
 \label{sec:maser_theory}
 
-All maser emission arises when photons of specific frequencies incite an excited molecule to emit a photon of the same frequency.  This causes a cascade of photons to be emitted within a region of excited molecules, resulting in exponential growth of the intensity of a ray of light.  The process itself requires only a population inversion between two states in a molecule, which is provided by some pumping mechanism.  In order to be detectable, the masering molecules must also be coherent in velocity (within the thermal width) to achieve a significant gain over the path length of the ray.  This section explores the theory of maser emission based on these two requirements.  A significant portion of maser theory is presented and derived in a series of papers by Moshe Elitzur \citep{Elitzur_1990, Elitzur_1990_paperI, Elitzur_1990_paperII, Elitzur_1991}.
+All maser emission arises when photons of specific frequencies incite an excited molecule to emit a photon of the same frequency.  This causes a cascade of photons to be emitted within a region of excited molecules, resulting in exponential growth of the intensity of a ray of light.  The process itself requires only a population inversion between two states in a molecule, which is provided by some pumping mechanism.  In order to be detectable, the masering molecules must also be coherent in velocity (within the thermal width) to achieve a significant gain over the path length of the ray \citep{lo2005}.  This section explores the theory of maser emission based on these two requirements.  A significant portion of maser theory is presented and derived in a series of papers by Moshe Elitzur \citep{Elitzur_1990, Elitzur_1990_paperI, Elitzur_1990_paperII, Elitzur_1991}.
 
 \subsection{Population Inversion \& Radiative Transfer}
 \label{sub:pop_inverse_rad_trans}
@@ -108,25 +108,27 @@ The exponential growth of the maser also leads to a spatial narrowing of the obs
 \subsection{Pumping Mechanisms}
 \label{sub:pumping}
 
-Stimulated emission requires an energy source to maintain the population inversion. The non-LTE conditions in the ISM are ideal for stimulated emission since they require the least amount of energy from a pump to create a population inversion. The pump mechanisms broadly fall into two categories: radiative and collisional. The environment and the characteristics of an energy transition also play a key role in how the pump mechanism achieves a population inversion. Table XXX ADD REF XXX shows typical properties of the regions where mega-maser emission is observed. This list is not exhaustive for masers in general, and the conditions for the same maser transitions in galactic sources can also differ (see \S XXX ADD SEC LABEL XXX). 
+Stimulated emission requires an energy source to maintain the population inversion.  The non-LTE conditions in the ISM are ideal for stimulated emission since they require the least amount of energy from a pump to create a population inversion.  The pump mechanisms broadly fall into two categories: radiative and collisional.  The environment and the characteristics of an energy transition also play a key role in how the pump mechanism achieves a population inversion.  Table \ref{subsub:rad_pump} shows typical properties of the regions where mega-maser emission is capable of occurring.  This list is not exhaustive for masers in general, as many more species have been observed as galactic masers \citep[][e.g., ]{Elitzur_1992_review}. 
 
 \subsubsection{Collisional Pumping}
 \label{subsub:coll_pump}
 
-Collisionally pumped (Type I) masers occur in higher-density regions, where the molecules responsible for the masers are excited from collisions primarily with H$_2$.  
+Collisionally pumped (Type I) masers occur in higher-density regions, where the molecules responsible for the masers are excited from collisions primarily with H$_2$. In order to maintain the inversion through collisions: (1) the spontaneous decay from higher energy states into the upper maser level must be faster than into the lower maser level, or (2) the spontaneous decay of the upper maser level must be slower than the lower maser level \citep{Goldreich_1974}. However, the transition will thermalize beyond the critical number densities ($n_{\mathrm{H}}$ Table \ref{subsub:rad_pump}), setting an upper limit on the energy transfer to the masing transition. 
 
 \subsubsection{Radiative Pumping}
 \label{subsub:rad_pump}
 
+Radiatively pumped (Type II) masers rely primarily on absorption of IR photons, and correlations are observed between the IR luminosity and maser luminosity \citep{darling2002_paperIII}. Successful use of this pump generally relies on having more transitions in the masing molecule  into the upper maser state than the lower one when IR photons are absorbed \citep{lo2005}.
+
 \begin{table} 
     \begin{tabular}{ c c c c c c }
-        Molecule & Transition & Wavelength & E$_\mathrm{upp}$/k & $n$ & $T$ \\ 
+        Molecule & Transition & Wavelength & E$_\mathrm{upp}$/k & $n_{\mathrm{H}}$ & $T$ \\ 
          &  & (cm) & (K) & (cm$^{-3}$) & (K) \\ \hline\hline
         OH & $^2\Pi_{3/2} (J=3/2; \Delta F = 0, \pm1)$ & $18$ & $0.08$ & $10^5 - 10^7$ & $100-200$ \\ 
         H$_2$O & $6_{16} \longrightarrow 5_{23}$ & $1.35$ & $640$ & $10^7 - 10^9$ & $300-1000$ \\ 
         H$_2$CO & $1_{10} \longrightarrow 1_{11}$ & $6.3$ & $14$ & $10^4 - 10^5$ & $20-40$ \\ 
         SiO & $v=1; J=2 \longrightarrow 1$ & $0.35$ & $1774$ & $10^9 - 10^10$ & $700-1000$ \\ 
     \end{tabular} 
-    \caption{\label{tab:maser_props} Conditions for most observed mega-maser emitting species is shown. The values are primarily from \citet{stahler_palla_2004}. } 
+    \caption{\label{tab:maser_props} Conditions for most observed mega-maser emitting species is shown. The values are primarily from Table 14.1 in \citet{stahler_palla_2004}. } 
 \end{table}
 
