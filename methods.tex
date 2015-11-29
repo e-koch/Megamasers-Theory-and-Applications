@@ -62,14 +62,14 @@ is a small dimensionless quantity \citep{stahler_palla_2004}. The second and thi
 Solving Equation \ref{eq:final_rad_trans} in the limit of small $\beta$ yields,
 \begin{equation}
 \label{eq:full_solution}
-i(s) - i_0 + \mathrm{ln}\left( i(s) + \beta}{i_0 + \beta} \right) = \frac{s}{L}
+i(s) - i_0 + \mathrm{ln}\left( \frac{i(s) + \beta}{i_0 + \beta} \right) = \frac{s}{L}
 \end{equation}
 where I have defined $i(s) = I(s)/I_s$ and $i_0 = I(0)/I_s$; the background radiation is represented by $I(0)$. \citet{Gray_2009} shows that explicitly solving for $i(s)$ requires use of Lambert's W-function. However, the relevant physical solutions may be attained by considering Equation \ref{eq:full_solution} in its limits.
 
 When $i(s)\ll 1$, the maser is said to be in an {\it unsaturated} state. Taking this limit of Equation \ref{eq:full_solution} give
 \begin{equation}
 \label{eq:unsat_solution}
-i(s) = i_0 \exp{s/L} + \beta\left[ \exp{s/L} - 1 \right]
+i(s) = i_0 \exp\left(s/L\right) + \beta\left[ \exp\left(s/L\right) - 1 \right]
 \end{equation}
 This shows the expected exponential growth of the intensity as the path length $s$ increases, the complete opposite of the exponential decay normally expected in radiative processes. Note that the inverse of the unsaturated growth length is analogous to the optical depth. As previously discussed, masers are self-limiting and will not remain in the unsaturated regime indefinitely. Once the population inversion becomes diminished, as shown in Equation \ref{eq:pop_inverse}, the maser will no longer experience exponential growth. When the initial flux is from a background source, the maser {\it gain} is $\ln \left( i(s)/i_0 \right)$ and will increase linearly with $s$ \citet{stahler_palla_2004}. Due to the exponential response of an unsaturated masers, they can display drastic time variability \citep{Elitzur_1992}. 
 
@@ -82,6 +82,18 @@ The transition to a saturated maser occurs at $s_T$, where $i(s)=1$. At that poi
 
 \subsection{Line Narrowing}
 \label{sub:line_narrow}
+
+Observations of masers have shown linewidths narrower than the expected thermal linewidths \citep[][e.g.,]{Elitzur_1992, stahler_palla_2004}. This is due to the exponential amplification in the unsaturated regime. Assume that the line follows a Doppler profile, so the absorption coefficient is expressed as
+\begin{equation}
+\label{eq:doppler_profile}
+\alpha_\nu = \alpha_0 \exp\left( -\frac{(\nu - \nu_0)^2}{\Delta\nu_D^2} \right)
+\end{equation}
+The Doppler width $\Delta\nu_D$ is a function of the molecular mass and kinetic temperature \citep{stahler_palla_2004}. Using the ratio of the intensity difference between the central frequency $\nu_0$ and where the intensity falls to $e^{-1}$, the change in the linewidths is
+\begin{equation}
+\label{eq:line_narrow}
+\Delta\nu^\star = \frac{\Delta\nu_D}{\sqrt{\alpha_0 s \right}}
+\end{equation}
+This result, as shown in \citet{stahler_palla_2004}, shows that the maser linewidth decreases with increasing path length. However, this result was derived using an unsaturated maser. A maser saturates from the inside out of it's line profile, since the greatest intensity is at the center. Thus, the center saturates before the wings of the profile do. The profile must then broaden, since the unsaturated wings are growing exponentially. This effect sets a limit on the narrowing of the line \citep{Elitzur_1992, stahler_palla_2004}. When the maser is completely saturated, it maintains a Doppler linewidth. 
 
 \subsection{Beaming}
 \label{sub:beaming}
