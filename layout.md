@@ -5,6 +5,5 @@ figures/maser_geometry/maser_geometry.png
 oh_megamasers.tex
 Hydroxyl_OH_produces_maser_emission__.tex
 h2o_megamasers.tex
-subsection_Pumping_Mechanism_label_sub__1.tex
 other_megamasers.tex
 conclusion_future.tex
