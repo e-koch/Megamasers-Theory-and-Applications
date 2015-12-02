@@ -62,22 +62,21 @@ where $L_{\mathrm{OH}}$ is in solar luminosities. This was derived using the sam
 \subsection{Magnetic fields in Extreme Starbursts}
 \label{sub:oh_zeeman}
 
-The star formation process is poorly understood due to the many dynamical components, over a large range of scales, that may play vital roles. One important constraint to understand how star formation occurs in a particular environment is the magnetic field XXX Ostriker \& McKee 07 XXX. Since these regions of extreme star-formation are highly obscured (see above), OH mega-masers offer a unique look into the magnetic field properties through Zeeman splitting. OH is the only observed para-magnetic masing species \citep{Elitzur1992_text}, since the outer electron shell contains an unpaired electron. Galactic OH masers associated with HII regions are typically strongly circularly polarized, as is expected for a para-magnetic species with a fully resolved Zeeman pattern \citep{Elitzur1992_text}. Megamasers are not 
+The star formation process is poorly understood due to the many dynamical components, over a large range of scales, that may play vital roles. One important constraint to understand how star formation occurs in a particular environment is the magnetic field XXX Ostriker \& McKee 07 XXX. Since these regions of extreme star-formation are highly obscured (see above), OH mega-masers offer a unique look into the magnetic field properties through Zeeman splitting. OH is the only observed para-magnetic masing species \citep{Elitzur1992_text}, since the outer electron shell contains an unpaired electron. Galactic OH masers associated with HII regions are typically strongly circularly polarized, as is expected for a para-magnetic species with a fully resolved Zeeman pattern \citep{Elitzur1992_text}. OH mega-masers are not as strongly polarized as the galactic sources, however the partial polarization is significant enough to be measurable.
+
+\citet{robishaw2008_OH_zeeman,mccbride2013_OH_zeeman_survey} derive magnetic field strengths for 14 OH mega-maser galaxies using Zeeman splitting of the 1667 MHz emission line.  Using the Arecibo telescope in full-Stokes mode, \citet{mccbride2013_OH_zeeman_survey} completed the initial survey by \citet{robishaw2008_OH_zeeman} in observing 77 OH mega-masers from the survey by \citet{darling2002_paperIII}. \citet{robishaw2008_OH_zeeman} also utilized the Green Bank Telescope in their initial study. These are all of the sources that Arecibo is capable of observing. Zeeman splitting allows for a direct measurement of the line-of-sight magnetic field. Primarily, it is related to the circularly polarized Stokes term, $V$:
+\begin{equation}
+\label{eq:stokes_b}
+V = \left( \frac{\nu}{\nu_0} \right) \left( \frac{dI}{d\nu} \right) b B_{\mathbin{\parallel}} + cI
+\end{equation}
+where $B_{\mathbin{\parallel}}$ is the line-of-sight magnetic field, b is the splitting coefficient from \citet{heiles1993}, and $cI$ is an added correction term for leakage of $I$, the total intensity, into $V$ due to limitations in the absolute calibration of polarization components. 
+
+The combined results of \citet{robishaw2008_OH_zeeman,mccbride2013_OH_zeeman_survey} yield a median magnetic field strength of 12 mG, with measurements of confident detections ranging from 6.1 to 27.1 mG. The median magnetic field strength is nearly twice the median field found in the survey of galactic OH masers by \citet{fish2005}. Note that all of these detections are of unresolved sources due to the use of single-dish telescopes and the resulting magnetic field estimates are averages over the inner $\sim 100$ pc regions in these galaxies. Use of the VLBI is needed to map the magnetic field in these regions \citep{robishaw2009}.
+
+The inferred line-of-sight magnetic fields allow for some dynamical constraints of the gas in these starburst regions. \citet{Parra_2005} find linewidths of 20 km/s in III Zw35 in the compact maser sources, which they suggest are non-gravitationally 
 
 \begin{itemize}
 \item McBride+14, mcbride heiles 13, robishaw heiles 09, robishaw+08
-\item robishaw+08 measure splitting at 1667 in 5 ULIRGS w/ Arecibo+GBT (8 in survey)
-\item B_LOS ~ .5 - 18 mG -- similar to galactic ones, suggesting local massive star formation is similar in starbursts
-\item similar to B measured from synch radiation -- fields pervade multiple ISM phases
-\item Equation 2 in robishaw+08 for B_LOS -- adapted Equation 1 in mcbride heiles 13
-\item Some profiles show multiple components -- total of 14 individual components (spatial)
-\item 1667 dominates over 1665, despite measuring similar B values to galactic -- maybe due to wider extragalactic maser lines
-\item in Arp 220 - 4 spots - 2 w/ fields toward us and 2 w/ fields away
-\item VLBI follow-up would give high-resolution field maps of B about the nucleus - robishaw heiles 09
-\item additional 11 confident detections - mcbride heiles 13, 6.1-27.6 mG
-\item new detections suggest larger than typical galactic B-fields -- median of 12 mG, ~2 larger than the Fish et al 2005
-\item used all confirmed targets from Darling paper III and Willett 2012
-\item Some non-detections may be due to much larger B, where the narrow line width approx doesn't hold
 \item Can constrain some dynamics -- spherical cloud stability inferred suggests B plays a significant role in region dynamics, lws of ~20 km/s from Parra et al 05 in III Zw35 suggest non-gravitationally bound clouds. Magnetic support may keep confinement (not unlike some proposed schemes for cloud substructure)
 \item McBride+14 include other B estimates from other methods, determine that ISM B-fields are greater in ULIRGs
 \item dependent on minimum energy argument holding in the center of starburst galaxies
