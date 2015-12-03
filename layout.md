@@ -1,5 +1,6 @@
 introduction.tex
 methods.tex
+Phys_595_Term_Project__.tex
 figures/maser_level_diagram/maser_level_diagram.png
 figures/maser_geometry/maser_geometry.png
 figures/maser_gain_linewidth/maser_gain_linewidth.png
