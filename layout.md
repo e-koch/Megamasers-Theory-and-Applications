@@ -12,3 +12,4 @@ figures/ngc4258_bragg2000/ngc4258_bragg2000.png
 figures/HO_w_reid2013/HO_w_reid2013.png
 other_megamasers.tex
 conclusion_future.tex
+figures/darling_detectability/darling_detectability.png
