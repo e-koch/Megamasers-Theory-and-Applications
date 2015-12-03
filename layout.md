@@ -9,5 +9,6 @@ figures/OH_props/OH_props.png
 figures/CO_IR_OHM_darling2007/CO_IR_OHM_darling2007.png
 h2o_megamasers.tex
 figures/ngc4258_bragg2000/ngc4258_bragg2000.png
+figures/HO_w_reid2013/HO_w_reid2013.png
 other_megamasers.tex
 conclusion_future.tex
