@@ -46,6 +46,11 @@ The modeled rotation curves allow for the masses of the nuclei to be measured. W
 % \item ALMA will allow to search the gas component directly at sub-" resolution
 % \item favour misalignment scenario due to accretion changing angular momentum as a function of scale
 % \item the misalignment between the 2 components may be related to accretion on the BH -- disk warping from radiation pressure (pringle 97),angular momentum changes w/ scale due to accretion events (hopkins \& quataert 10, 11); disk alignments boost accretion rate (nixon+12) - gas angular momentum dissipated where disks meet, could boost accretion rate by 1 dex; gas from external sources giving accretion at random angles from small satellites
+% \item Paper III kuo+11 - derive masses for 7 SMBHs (including UGC 3789) -- all consistent w/ edge-on circumnuclear disks w/ inner radii b/w 0.09-0.5 pc -- consistent keplerian motion
+% \item mass densities w/in maser disk b/w $0.12-60\times10^{10}$ Msol/pc3; masses b/w $0.76-6.5\times10^7$ Msol
+% \item The BH mass from virial arguments agrees w/ 4 galaxies -- have much larger errors though -- method from Greene ho 06, kim+08, vestergaard osmer 09 -- "f"-value of $5.2\pm1.3$  woo+10 where f is an empirically determined factor depending on structure, kinematics, orientation of broad-line region
+% \item Large improvements to constraining the $M_BH-\sigma$ relation at the low end -- evidence for not a single power law as was originally proposed (see also the greene+11,13 results)
+% \item Using constraints w/ Plummer model for dense clusters of compact objects -- rule out clusters as the dominant mass source in the nuclei, best explanation is SMBHs
 % \end{itemize}
 
 % \subsection{Jet masers}
@@ -83,69 +88,32 @@ The modeled rotation curves allow for the masses of the nuclei to be measured. W
 
 The Megamaser Cosmology Project (MCP) is an on-going ambituous project to provide a high-precision measurement of Hubble's Constant ($H_0$), independent of previous estimates \citep{reid2009_mmproject_I}. The project relies on the ability to measure the distances to known H$_2$O mega-maser hosts with Keplerian circumnuclear disks to high precision (\S\ref{sub:h20_agn}). To reach uncertainties in $H_0$ less than 10\% for each maser hosting galaxy, a significant observational time investment is require from multiple facilities. Multy-epoch observations are conducted with single dish facilities (GBT \& Arecibo) on a near monthly basis to constrain the centripetal acceleration, $dV/dt$. These are then combined with a VLBI observation (sometimes multiple), which constrains the angular acceleration of the maser spots, $dV/d\theta$.
 
-The MCP has now applied their technique for measuring the distance and $H_0$ for four galaxies: UGC 3789 \citep{Braatz_2010,reid2013_mmproject_IV}, NGC 6264 \citep{Kuo_2013}, NGC 6323 \citep{kuo2015_mmproject_VI}, and NGC 5765b \citep{gao2015}.
+The MCP has now applied their technique for measuring the distance and $H_0$ for four galaxies: UGC 3789 \citep{Braatz_2010,reid2013_mmproject_IV}, NGC 6264 \citep{Kuo_2013}, NGC 6323 \citep{kuo2015_mmproject_VI}, and NGC 5765b \citep{gao2015}. All of these measurements required multi-epoch observations, along with modeling several aspects of the disks themselves in order to measure the desired parameter $H_0$. In total, 10 parameters need to be constrained: $H_0$, black hole mass, black hole line-of-sight velocity, the peculiar velocity and 6 parameters constraining the disk. \citet{reid2013_mmproject_IV} used Metropolis-Hastings sampling (MCMC) to simultaneously fit the entire model with all of the available observational data. For all four galaxies, this technique provided well-constrained posterior distributions and excellent Markov Chain diagnostics (low autocorrelation, $\sim 30\%$ acceptance rate of samples, etc...). They find values of $H_0=68.9\pm7.1$ km/s/Mpc for UGC 3789, $H_0=68\pm9$ km/s/Mpc for NGC 6264, $H_0=73^{+26}_{-22}$ km/s/Mpc for NGC 6323, and $H_0=66.0\pm6.0$ km/s/Mpc for NGC 5765b, which all agree within the quoted 1$\sigma$ errors from the posterior distributions. The expected uncertainties are near the target 10\% expected for the survey \citep{reid2013_mmproject_IV}, except for NGC 6323 which has a significantly lower surface brightness and is near the sensitivity limits of current instrumentation \citep{kuo2015_mmproject_VI}. To reach the 3\% uncertainty limit of other experimentally derived values of $H_0$, the MCP project estimated they would need to perform this analysis for 10 galaxies, each with an individual uncertainty limit of $\sim 10\%$ \citep{reid2013_mmproject_IV}.  
 
-\begin{itemize}
-\item Paper I  reid+09 - VLBI map in UGC 3789 - rotational velocities of $~800$ km/s to radii of 0.08 pc
-\item MM discovered by Braatz gugliucci 08
-\item edge-on Keplerian rotation about $10^7 M_sol$ SMBH
-\item well into Hubble flow -- $v_rec\approx3325$ km/s
-\item Paper II braatz+10 - derive distance to UGC 3789, determine value for Hubble constant
-\item measure angular-diameter distances using maser emission in the circumnuclear flow
-\item use 3.2 years of monthly GBT observations to measure the centripetal accelerations of the maser components
-\item find evidence for maser components confined into 2 rings -- determine distance of $49.0\pm7.0$ Mpc -- most accurate geometric measurement of a galaxy in the Hubble flow -- using 2 thin ring model
-\item Gives $H_0=69\pm11$ km/s/Mpc; $M_{BH}=1.09\times10^7 \pm 14\% $ Msol -- use standard $\Lambda$CDM model with $\Sigma_m=0.26$
-\item Main uncertainty comes from orbital curvature parameter $\Omega$ and uncertainties from deriving the centripetal accelerations (lowered w/ more observations), will decrease to sub-10\% errors on distance.
-\item Paper III kuo+11 - derive masses for 7 SMBHs (including UGC 3789) -- all consistent w/ edge-on circumnuclear disks w/ inner radii b/w 0.09-0.5 pc -- consistent keplerian motion
-\item mass densities w/in maser disk b/w $0.12-60\times10^{10}$ Msol/pc3; masses b/w $0.76-6.5\times10^7$ Msol
-\item BH mass errors at $~11$\%, dominated by the errors in the Hubble constant -- used $H_0=73\pm8$ km/s/Mpc from freedman+01
-\item The BH mass from virial arguments agrees w/ 4 galaxies -- have much larger errors though -- method from Greene ho 06, kim+08, vestergaard osmer 09 -- "f"-value of $5.2\pm1.3$  woo+10 where f is an empirically determined factor depending on structure, kinematics, orientation of broad-line region
-\item Large improvements to constraining the $M_BH-\sigma$ relation at the low end -- evidence for not a single power law as was originally proposed (see also the greene+11,13 results)
-\item Using constraints w/ Plummer model for dense clusters of compact objects -- rule out clusters as the dominant mass source in the nuclei, best explanation is SMBHs
-\item Paper IV reid+13 -- Directly measure $H_0=89.9\pm7.1$ km/s/Mpc (10\% uncertainty)
-\item based on continued observations of UGC 3789 in papers I-II, with modelling improvements
-\item completely independent of other methods for determining $H_0$
-\item Then is at a distance of $49.6\pm5.1$ Mpc, $M_BH=1.16\pm0.12\times10^7$ Msol
-\item fitted centripetal accelerations in 2 ways: (1) by-eye identification of peaks that were followed through the time-series; (2) random choice of initial values, which are lsq fit. Repeated 100 times and best 4 (based on reduced $\chi^2$) were chosen -- GOOD agreement b/w the 2
-\item Globally fit 10 parameters to using the data using MCMC -- $H_0$ is one parameter, fit a gaussian to the posterior and report error bars based on that
-\item Fit includes peculiar velocity, los velocity of BH, $H_0$, BH mass, BH position wrt maser positions, inclination angle, inclination warping, gas orbital eccentricity, angle of periastron wrt to LOS, deriv of ang of peri wrt radii in disk -- flat priors except for peculiar velocity -- excellent convergence
-\item Constraining EoS for dark energy -- the "w" term, combine their estimate for $H_0$ w/ WMAP7 results to independently constrain EoS -- gives $w=-0.98\pm0.20$, improving constraints by factor of 2. Best result likely until SKA -- \textbf{COULD SHOW FIGURE 7 OF THEIR PAPERS}
-\item Paper V kuo+13 - Measure distance to NGC 6264 to be $144\pm19$ Mpc, $H_0=68\pm9$ km/s/Mpc, and $M_BH = 3.09\pm0.42\times 10^7$ Msol
-\item same techniques as was used in first 4 papers -- also used Effelsburg
-\item measure centripetal accelerations of the masers as they rotate about in the disk
-\item repeat bayesian model from paper IV -- required multiple rings to constrain the disk, unlike the 2 ring model used before
-\item first direct distance measurement of a galaxy beyond 100 Mpc
-\item this represents the limit that current radio telescopes can achieve -- propose extensions to this method to simultaneously fit with other maser emission (if detected...)
-\item Paper VI kuo+15 -- perform analysis on NGC 6323, find $H_0=73^{+26}_{-22}$ km/s/Mpc, limited by low SB of detections ($\lt 15$ mJy)
-\item specifically develop techniques to help in the low SB regime (until new telescopes, NG-VLA, etc, etc), but then state they don't help much
-\item Paper VII pesce+15 -- testing disk physics; test maoz & mckee 98 model for inversion in gas behind spiral shocks in a disk (results from Humphreys+08)
-\item use 16 galaxies that have VLBI mapping at 22 GHz (9 show keplerian motion) 
-\item find evidence of scintillation, likely due to ISM (just like that seen in the OH in Circinus); favour a local screen at $~70$ pc
-\item constrain B-field based on non-detections of Zeeman splitting during flaring events (down to $~73$ mG, mostly around 200-300 mG)
-\item maoz & mckee 98 seeked model to explain NGC 4258 where redshifted components are much brighter than the blue. Model says that inversion only occurs due to the post-shock gas behind a spiral shock in the accretion disk (viewed edge-on)
-\item trailing shocks (ie. redshifted) are then preferential for masers
-\item show, via likelihood analysis, that NGC 4258 is the only significant outlier in the sample (assuming many gaussians)
-\item find a slight favouring for the MM08 model (not very convincing, but...); tested by comparing the drifts of the blue and red shifts, which should be different according to the model
-\item Time variability -- Long term (hundreds of days) is `bulk variability' seen in all sufficiently monitored galaxies (dynamical timescale for average maser disk is $~10^4$ years so this must arise from much closer to the AGN than the observed masers; `reverberation mechanism' of gallimore+01); short-term ($~$monthly) showing significant flaring of individual maser lines (may be due o chance alignments of masing clumps in the disk (kartje+99) assuming masing comes from individual clumps in the disk)
-\item extremely short variations ($~$day, in NGC 3079 (vlemmings+07) amd circinus (mccallum+05)) likely due to ISM scintillation. Show that ESO 558-G009 also shows this in this paper
-\item Claussen + Lo 86 note systematic variations from nucleart maser s in NGC 1068, suggesting all are powered by a common source (nucleus)
-\item Then change would reverberate radially throughout the disk
-\item Gallimore+01 argued that there is a correlation b/w the red and blue emission in the disk for 1068
-\item Create a radial spectrum to test this for other targets, if BH mass constrained to better than 10\% (6 of the samples)
-\item Find no correlation for the samples down to their sensitivity limit of $~$10s of mJy
-\item Zeeman effect for H2O - B-fields in AGN thought to be important; MRI likely way angular momentum is transported in accretion disks (balbus hawley 91); launching outflows (blandford payne 82, keating+12)
-\item 22 GHz transition made up of up to 6 fine structure transitions (fiebig guesten 89) -- is non-paramagnetic but Zeeman splitting arises from coupling b/w nucleus magnetic moment and external field; nearly $10^3$ time weaker than in OH (don't have unpaired electron to couple w/ field)
-\item derive upper limits, based primarily on modelling of modjaz+05
-\item limits typically $~3-50$ times greater than values detected in OH (robishaw+08, mcbride+13), but is regime where magnetic pressure is comparable to the gas pressure in the disk
-\item focussed testing during flaring (as that gives the best S/N)
-\item Paper VIII gao+15 -- distance to NGC 5765b, $4.55\pm0.40\times10^7$ Msol, $H_0=66.0\pm6.0$ km/s/Mpc, $D=126.3\pm11.6$ Mpc
-\item high-velocity features in spatial clumps -- possibly due to spiral density wave in the disk
-\item shows no structural changes, unlike NGC 4258
-\item max SB up to 200 mJy -- well above lower limits and those found in previous papers ($\approx 10$ mJy)
-\item spiral density wave model from maoz 95 from non-axisymmetric perturbations in the accretion disk; clumps located at intersection of spiral arms and disk mid-line
-\item clumps on both size show similar spacings
-\item combined VLA observations and upgraded VLBI over previous papers
-\end{itemize}
+Constraining $H_0$ is important for constraining the $w$ parameter for the equation of state for dark energy \citep{reid2013_mmproject_IV}. The constraints derived by \citet{reid2013_mmproject_IV} are combined with the WMAP7 results in Figure XXX (red contours). Shaded regions in the figure are from the WMAP results alone, and the blue contours show the expected constraints available upon completion of the MCP. The WMAP7 \citet{reid2013_mmproject_IV} results give $w=-0.98\pm0.20$. The constraints from the completed MCP are expected to reduce the uncertainty to $\pm10$. By utilizing the newest Planck results, it may possible to further constrain $w$ beyond these expectations.
+
+% \begin{itemize}
+% \item Paper VII pesce+15 -- testing disk physics; test maoz & mckee 98 model for inversion in gas behind spiral shocks in a disk (results from Humphreys+08)
+% \item use 16 galaxies that have VLBI mapping at 22 GHz (9 show keplerian motion) 
+% \item find evidence of scintillation, likely due to ISM (just like that seen in the OH in Circinus); favour a local screen at $~70$ pc
+% \item constrain B-field based on non-detections of Zeeman splitting during flaring events (down to $~73$ mG, mostly around 200-300 mG)
+% \item maoz & mckee 98 seeked model to explain NGC 4258 where redshifted components are much brighter than the blue. Model says that inversion only occurs due to the post-shock gas behind a spiral shock in the accretion disk (viewed edge-on)
+% \item trailing shocks (ie. redshifted) are then preferential for masers
+% \item show, via likelihood analysis, that NGC 4258 is the only significant outlier in the sample (assuming many gaussians)
+% \item find a slight favouring for the MM08 model (not very convincing, but...); tested by comparing the drifts of the blue and red shifts, which should be different according to the model
+% \item Time variability -- Long term (hundreds of days) is `bulk variability' seen in all sufficiently monitored galaxies (dynamical timescale for average maser disk is $~10^4$ years so this must arise from much closer to the AGN than the observed masers; `reverberation mechanism' of gallimore+01); short-term ($~$monthly) showing significant flaring of individual maser lines (may be due o chance alignments of masing clumps in the disk (kartje+99) assuming masing comes from individual clumps in the disk)
+% \item extremely short variations ($~$day, in NGC 3079 (vlemmings+07) amd circinus (mccallum+05)) likely due to ISM scintillation. Show that ESO 558-G009 also shows this in this paper
+% \item Claussen + Lo 86 note systematic variations from nucleart maser s in NGC 1068, suggesting all are powered by a common source (nucleus)
+% \item Then change would reverberate radially throughout the disk
+% \item Gallimore+01 argued that there is a correlation b/w the red and blue emission in the disk for 1068
+% \item Create a radial spectrum to test this for other targets, if BH mass constrained to better than 10\% (6 of the samples)
+% \item Find no correlation for the samples down to their sensitivity limit of $~$10s of mJy
+% \item Zeeman effect for H2O - B-fields in AGN thought to be important; MRI likely way angular momentum is transported in accretion disks (balbus hawley 91); launching outflows (blandford payne 82, keating+12)
+% \item 22 GHz transition made up of up to 6 fine structure transitions (fiebig guesten 89) -- is non-paramagnetic but Zeeman splitting arises from coupling b/w nucleus magnetic moment and external field; nearly $10^3$ time weaker than in OH (don't have unpaired electron to couple w/ field)
+% \item derive upper limits, based primarily on modelling of modjaz+05
+% \item limits typically $~3-50$ times greater than values detected in OH (robishaw+08, mcbride+13), but is regime where magnetic pressure is comparable to the gas pressure in the disk
+% \item focussed testing during flaring (as that gives the best S/N)
+% \end{itemize}
 
 \subsection{Connection between OH and H$_2$O?}
 \label{sec:oh_and_h2o}
