@@ -1,4 +1,4 @@
-Phys_595_Term_Project__.tex
+bf_Phys_595_Term_Project__.tex
 introduction.tex
 methods.tex
 figures/maser_level_diagram/maser_level_diagram.png
