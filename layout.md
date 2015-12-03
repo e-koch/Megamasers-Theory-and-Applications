@@ -6,6 +6,7 @@ figures/maser_gain_linewidth/maser_gain_linewidth.png
 section_OH_Megamasers_label_sec__.tex
 figures/OH_IR_spectra/OH_IR_spectra.png
 figures/OH_props/OH_props.png
+figures/CO_IR_OHM_darling2007/CO_IR_OHM_darling2007.png
 h2o_megamasers.tex
 other_megamasers.tex
 conclusion_future.tex
