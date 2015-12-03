@@ -8,5 +8,6 @@ figures/OH_IR_spectra/OH_IR_spectra.png
 figures/OH_props/OH_props.png
 figures/CO_IR_OHM_darling2007/CO_IR_OHM_darling2007.png
 h2o_megamasers.tex
+figures/ngc4258_bragg2000/ngc4258_bragg2000.png
 other_megamasers.tex
 conclusion_future.tex
